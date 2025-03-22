@@ -2,16 +2,17 @@
 // All packages except `@mantine/hooks` require styles imports
 import '@mantine/core/styles.css';
 import { MantineProvider } from '@mantine/core';
+import data from './assets/data.json';
 
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 // import './App.css'
 
 function App() {  
   return <MantineProvider>{  
     <>
     <header>
+    <div>{data.length}</div>
     <nav>
       <div>Home</div>
       <div>Shopping Cart</div>
@@ -24,9 +25,17 @@ function App() {
       <nav>
         <ul>Category
           <li>Electric</li>
-          <li></li>
+          <li>Kids & Junior</li>
+          <li>Mountain</li>
+          <li>Road</li>
         </ul>
         
+        <ul>Brand
+          <li>Electric</li>
+          <li>Kids & Junior</li>
+          <li>Mountain</li>
+          <li>Road</li>
+        </ul>
       </nav>
     </main>
     <footer></footer>
