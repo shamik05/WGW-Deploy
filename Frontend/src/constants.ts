@@ -5,4 +5,14 @@ export const headerLinks = [
   { link: '/logout', label: 'Logout' },
 ];
 
-
+export interface Bike {
+  name: string;
+  brand: string;
+  category: string;
+  colour: string;
+  frameSize: string;
+  frameMaterial: string;
+  year: number;
+  price: number,
+  image: string,
+}
